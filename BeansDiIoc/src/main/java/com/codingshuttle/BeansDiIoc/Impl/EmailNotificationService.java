@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 //@Primary
 @Service
 @Qualifier("emailNotif")
-@ConditionalOnProperty(name = "notification.type", havingValue = "email")
+//@ConditionalOnProperty(name = "notification.type", havingValue = "email")
 public class EmailNotificationService implements NotificationService
 {
     @Override
