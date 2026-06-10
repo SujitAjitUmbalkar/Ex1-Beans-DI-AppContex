@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 
 //@Primary
-@Service
+//@Service
 @Qualifier("emailNotif")
 //@ConditionalOnProperty(name = "notification.type", havingValue = "email")
 public class EmailNotificationService implements NotificationService

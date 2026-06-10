@@ -12,7 +12,7 @@ import java.util.Map;
 @SpringBootApplication
 public class BeansDiIocApplication implements CommandLineRunner
 {
-    @Autowired
+    @Autowired(required = false)            // null if not present
     Map<String , NotificationService> notificationServices = new HashMap<>();
 
     public static void main(String[] args) {
