@@ -1,11 +1,13 @@
 package com.codingshuttle.BeansDiIoc.Impl;
 
 import com.codingshuttle.BeansDiIoc.NotificationService;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 
-@Primary
+//@Primary
 @Service
+@Qualifier("emailNotif")
 public class EmailNotificationService implements NotificationService
 {
     @Override
