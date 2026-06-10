@@ -8,10 +8,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class BeansDiIocApplication implements CommandLineRunner
 {
 
-    private final PaymentService paymentService;
-    public BeansDiIocApplication(PaymentService paymentService)
+    private final NotificationService notificationService;
+    public BeansDiIocApplication(NotificationService notificationService)
     {
-        this.paymentService = paymentService;
+        this.notificationService = notificationService;
     }
 
     public static void main(String[] args) {
@@ -21,6 +21,6 @@ public class BeansDiIocApplication implements CommandLineRunner
     @Override
     public void run(String... args) throws Exception
     {
-        paymentService.pay();
+        notificationService.notification("Hellooooooo.... ");
     }
 }

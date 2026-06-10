@@ -24,15 +24,15 @@ public class PaymentService
         System.out.println("Paying... ");
     }
 
-    @PostConstruct
-    public void postConstruct()
-    {
-        System.out.println("After Bean creation");
-    }
-
-    @PreDestroy
-    public void preDestroy()
-    {
-        System.out.println("Before Bean destroy");
-    }
+//    @PostConstruct
+//    public void postConstruct()
+//    {
+//        System.out.println("After Bean creation");
+//    }
+//
+//    @PreDestroy
+//    public void preDestroy()
+//    {
+//        System.out.println("Before Bean destroy");
+//    }
 }
